@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2731220422A4B9FC0077DEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731220322A4B9FC0077DEFA /* AppDelegate.swift */; };
+		2731220922A4B9FC0077DEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2731220722A4B9FC0077DEFA /* Main.storyboard */; };
+		2731220C22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2731220A22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld */; };
+		2731220E22A4B9FE0077DEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2731220D22A4B9FE0077DEFA /* Assets.xcassets */; };
+		2731221122A4B9FE0077DEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2731220F22A4B9FE0077DEFA /* LaunchScreen.storyboard */; };
+		2731221922A4BA240077DEFA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731221822A4BA230077DEFA /* Alert.swift */; };
+		2731221B22A4BA2F0077DEFA /* MapviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731221A22A4BA2F0077DEFA /* MapviewController.swift */; };
+		2731221D22A4BA3B0077DEFA /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731221C22A4BA3B0077DEFA /* PhotosViewController.swift */; };
+		2731221F22A4BA4D0077DEFA /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731221E22A4BA4D0077DEFA /* FlickerAPI.swift */; };
+		2731222122A4BA570077DEFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731222022A4BA570077DEFA /* Constants.swift */; };
+		2731222322A4BA640077DEFA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731222222A4BA640077DEFA /* DataController.swift */; };
+		2731222722A4BA880077DEFA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731222622A4BA880077DEFA /* CollectionViewCell.swift */; };
+		2731222922A4BA940077DEFA /* Pin+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731222822A4BA940077DEFA /* Pin+MKAnnotation.swift */; };
+		293059BB5D9F3C8884A2969B /* Pods_Virtual_Tourist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14687CC6BB763DFA060517B /* Pods_Virtual_Tourist.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21A2D48F0C7D9A9305BC8531 /* Pods-Virtual Tourist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Tourist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Tourist/Pods-Virtual Tourist.debug.xcconfig"; sourceTree = "<group>"; };
+		2731220022A4B9FC0077DEFA /* Virtual Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Tourist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731220322A4B9FC0077DEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2731220822A4B9FC0077DEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2731220B22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Virtual_Tourist.xcdatamodel; sourceTree = "<group>"; };
+		2731220D22A4B9FE0077DEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2731221022A4B9FE0077DEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2731221222A4B9FE0077DEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2731221822A4BA230077DEFA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2731221A22A4BA2F0077DEFA /* MapviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapviewController.swift; sourceTree = "<group>"; };
+		2731221C22A4BA3B0077DEFA /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		2731221E22A4BA4D0077DEFA /* FlickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
+		2731222022A4BA570077DEFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2731222222A4BA640077DEFA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2731222622A4BA880077DEFA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2731222822A4BA940077DEFA /* Pin+MKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+MKAnnotation.swift"; sourceTree = "<group>"; };
+		8355A6F47736B5D1A11C1639 /* Pods-Virtual Tourist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Tourist.release.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Tourist/Pods-Virtual Tourist.release.xcconfig"; sourceTree = "<group>"; };
+		C14687CC6BB763DFA060517B /* Pods_Virtual_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273121FD22A4B9FC0077DEFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293059BB5D9F3C8884A2969B /* Pods_Virtual_Tourist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		273121F722A4B9FC0077DEFA = {
+			isa = PBXGroup;
+			children = (
+				2731220222A4B9FC0077DEFA /* Virtual Tourist */,
+				2731220122A4B9FC0077DEFA /* Products */,
+				B22F33030495A479EBF7C778 /* Pods */,
+				C8D4C8E3847362D6F3B59A04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2731220122A4B9FC0077DEFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2731220022A4B9FC0077DEFA /* Virtual Tourist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2731220222A4B9FC0077DEFA /* Virtual Tourist */ = {
+			isa = PBXGroup;
+			children = (
+				2731220322A4B9FC0077DEFA /* AppDelegate.swift */,
+				2731221822A4BA230077DEFA /* Alert.swift */,
+				2731221E22A4BA4D0077DEFA /* FlickerAPI.swift */,
+				2731222022A4BA570077DEFA /* Constants.swift */,
+				2731221A22A4BA2F0077DEFA /* MapviewController.swift */,
+				2731222222A4BA640077DEFA /* DataController.swift */,
+				2731221C22A4BA3B0077DEFA /* PhotosViewController.swift */,
+				2731222822A4BA940077DEFA /* Pin+MKAnnotation.swift */,
+				2731222622A4BA880077DEFA /* CollectionViewCell.swift */,
+				2731220722A4B9FC0077DEFA /* Main.storyboard */,
+				2731220D22A4B9FE0077DEFA /* Assets.xcassets */,
+				2731220F22A4B9FE0077DEFA /* LaunchScreen.storyboard */,
+				2731221222A4B9FE0077DEFA /* Info.plist */,
+				2731220A22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld */,
+			);
+			path = "Virtual Tourist";
+			sourceTree = "<group>";
+		};
+		B22F33030495A479EBF7C778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21A2D48F0C7D9A9305BC8531 /* Pods-Virtual Tourist.debug.xcconfig */,
+				8355A6F47736B5D1A11C1639 /* Pods-Virtual Tourist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8D4C8E3847362D6F3B59A04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C14687CC6BB763DFA060517B /* Pods_Virtual_Tourist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273121FF22A4B9FC0077DEFA /* Virtual Tourist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2731221522A4B9FE0077DEFA /* Build configuration list for PBXNativeTarget "Virtual Tourist" */;
+			buildPhases = (
+				1A2E9B30DC3D9AA959BAF182 /* [CP] Check Pods Manifest.lock */,
+				273121FC22A4B9FC0077DEFA /* Sources */,
+				273121FD22A4B9FC0077DEFA /* Frameworks */,
+				273121FE22A4B9FC0077DEFA /* Resources */,
+				7EAA5623D30B5206584CCE83 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Virtual Tourist";
+			productName = "Virtual Tourist";
+			productReference = 2731220022A4B9FC0077DEFA /* Virtual Tourist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		273121F822A4B9FC0077DEFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bahi El Feky";
+				TargetAttributes = {
+					273121FF22A4B9FC0077DEFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 273121FB22A4B9FC0077DEFA /* Build configuration list for PBXProject "Virtual Tourist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 273121F722A4B9FC0077DEFA;
+			productRefGroup = 2731220122A4B9FC0077DEFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				273121FF22A4B9FC0077DEFA /* Virtual Tourist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		273121FE22A4B9FC0077DEFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2731221122A4B9FE0077DEFA /* LaunchScreen.storyboard in Resources */,
+				2731220E22A4B9FE0077DEFA /* Assets.xcassets in Resources */,
+				2731220922A4B9FC0077DEFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2E9B30DC3D9AA959BAF182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Virtual Tourist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EAA5623D30B5206584CCE83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Tourist/Pods-Virtual Tourist-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Tourist/Pods-Virtual Tourist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273121FC22A4B9FC0077DEFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2731222722A4BA880077DEFA /* CollectionViewCell.swift in Sources */,
+				2731221F22A4BA4D0077DEFA /* FlickerAPI.swift in Sources */,
+				2731220C22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld in Sources */,
+				2731221922A4BA240077DEFA /* Alert.swift in Sources */,
+				2731222322A4BA640077DEFA /* DataController.swift in Sources */,
+				2731221D22A4BA3B0077DEFA /* PhotosViewController.swift in Sources */,
+				2731220422A4B9FC0077DEFA /* AppDelegate.swift in Sources */,
+				2731222922A4BA940077DEFA /* Pin+MKAnnotation.swift in Sources */,
+				2731221B22A4BA2F0077DEFA /* MapviewController.swift in Sources */,
+				2731222122A4BA570077DEFA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2731220722A4B9FC0077DEFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2731220822A4B9FC0077DEFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2731220F22A4B9FE0077DEFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2731221022A4B9FE0077DEFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2731221322A4B9FE0077DEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2731221422A4B9FE0077DEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2731221622A4B9FE0077DEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A2D48F0C7D9A9305BC8531 /* Pods-Virtual Tourist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTMA3AWC6P;
+				INFOPLIST_FILE = "Virtual Tourist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bahi-Elfeky.Virtual-Tourist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2731221722A4B9FE0077DEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8355A6F47736B5D1A11C1639 /* Pods-Virtual Tourist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTMA3AWC6P;
+				INFOPLIST_FILE = "Virtual Tourist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bahi-Elfeky.Virtual-Tourist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273121FB22A4B9FC0077DEFA /* Build configuration list for PBXProject "Virtual Tourist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2731221322A4B9FE0077DEFA /* Debug */,
+				2731221422A4B9FE0077DEFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2731221522A4B9FE0077DEFA /* Build configuration list for PBXNativeTarget "Virtual Tourist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2731221622A4B9FE0077DEFA /* Debug */,
+				2731221722A4B9FE0077DEFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2731220A22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2731220B22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodel */,
+			);
+			currentVersion = 2731220B22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodel */;
+			path = Virtual_Tourist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 273121F822A4B9FC0077DEFA /* Project object */;
+}
