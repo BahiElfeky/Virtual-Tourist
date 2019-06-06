@@ -26,6 +26,19 @@ class MapviewController: UIViewController {
         initLongPress()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        initResults()
+        initMapAnnoitations()
+        // TODO: update pins
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        resultsController = nil
+    }
+    
 
     
     private func initMapAnnoitations() {

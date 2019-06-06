@@ -66,7 +66,7 @@ class PhotosViewController : UIViewController {
         let predicate = NSPredicate(format: "pin == %@", pin)
         fetchRequest.sortDescriptors = [sortDescriptor]
         fetchRequest.predicate = predicate
-        resultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.backgroundContext, sectionNameKeyPath: nil, cacheName: "\(pin!.creationDate!)-photos")
+        resultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.viewContext, sectionNameKeyPath: nil, cacheName: "\(pin!.creationDate!)-photos")
         resultsController.delegate = self
         do {
             try resultsController.performFetch()
@@ -87,6 +87,7 @@ class PhotosViewController : UIViewController {
             else if error.contains("Connected"){
                 for photoURL in photosURL! {
                     self.addPhoto(url: photoURL)
+                    
                 }
             }
             else {
@@ -108,11 +109,7 @@ class PhotosViewController : UIViewController {
         photo.creationDate = Date()
         photo.url = url
         photo.pin = pin
-        do {
-            try dataController.viewContext.save()
-        } catch {
-            print("Error saving")
-        }
+        try? dataController.viewContext.save()
         
     }
     
@@ -177,7 +174,7 @@ extension PhotosViewController: UICollectionViewDataSource {
         } else {
             collectionView.deleteEmptyMessage()
         }
-        
+
         return resultsController.sections?[section].numberOfObjects ?? 0
         
     }
@@ -199,7 +196,7 @@ extension PhotosViewController: UICollectionViewDataSource {
 
                 } else {
                     cellPhoto.data = img?.pngData()
-                    try? self.dataController.backgroundContext.save()
+                    try? self.dataController.viewContext.save()
                 }
             }
         }
@@ -226,7 +223,7 @@ extension PhotosViewController: NSFetchedResultsControllerDelegate {
             myCollectionView.insertItems(at: [newIndexPath!])
             break
         case .delete:
-            myCollectionView.deleteItems(at: [indexPath!])
+                self.myCollectionView.deleteItems(at: [indexPath!])
             break
         default: ()
         }
@@ -240,13 +237,13 @@ extension UICollectionView {
         messageLabel.text = message
         messageLabel.textAlignment = .center;
         messageLabel.sizeToFit()
-        
         self.backgroundView = messageLabel;
         
     }
-    
     func deleteEmptyMessage() {
+        DispatchQueue.main.async {
         self.backgroundView = nil
+        }
     }
 }
 

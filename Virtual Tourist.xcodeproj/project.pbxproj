@@ -56,6 +56,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27022F3C22A99DAA003583B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2731222022A4BA570077DEFA /* Constants.swift */,
+				2731222222A4BA640077DEFA /* DataController.swift */,
+				2731222822A4BA940077DEFA /* Pin+MKAnnotation.swift */,
+				2731220A22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27022F3D22A99DB3003583B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2731220722A4B9FC0077DEFA /* Main.storyboard */,
+				2731220F22A4B9FE0077DEFA /* LaunchScreen.storyboard */,
+				2731222622A4BA880077DEFA /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27022F3E22A99DB8003583B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2731221A22A4BA2F0077DEFA /* MapviewController.swift */,
+				2731221C22A4BA3B0077DEFA /* PhotosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		273121F722A4B9FC0077DEFA = {
 			isa = PBXGroup;
 			children = (
@@ -80,17 +110,11 @@
 				2731220322A4B9FC0077DEFA /* AppDelegate.swift */,
 				2731221822A4BA230077DEFA /* Alert.swift */,
 				2731221E22A4BA4D0077DEFA /* FlickerAPI.swift */,
-				2731222022A4BA570077DEFA /* Constants.swift */,
-				2731221A22A4BA2F0077DEFA /* MapviewController.swift */,
-				2731222222A4BA640077DEFA /* DataController.swift */,
-				2731221C22A4BA3B0077DEFA /* PhotosViewController.swift */,
-				2731222822A4BA940077DEFA /* Pin+MKAnnotation.swift */,
-				2731222622A4BA880077DEFA /* CollectionViewCell.swift */,
-				2731220722A4B9FC0077DEFA /* Main.storyboard */,
+				27022F3C22A99DAA003583B0 /* Model */,
+				27022F3D22A99DB3003583B0 /* View */,
+				27022F3E22A99DB8003583B0 /* Controller */,
 				2731220D22A4B9FE0077DEFA /* Assets.xcassets */,
-				2731220F22A4B9FE0077DEFA /* LaunchScreen.storyboard */,
 				2731221222A4B9FE0077DEFA /* Info.plist */,
-				2731220A22A4B9FC0077DEFA /* Virtual_Tourist.xcdatamodeld */,
 			);
 			path = "Virtual Tourist";
 			sourceTree = "<group>";
